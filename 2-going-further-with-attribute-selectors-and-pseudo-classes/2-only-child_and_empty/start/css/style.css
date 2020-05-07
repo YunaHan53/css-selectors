@@ -8,3 +8,14 @@ li:first-child {
 li:last-child {
   border: none;
 }
+
+/* Targets the only child of selected element */
+span:only-child {
+  color: #52bab3;
+  font-size: 1.5em;
+}
+
+/* Targets the empty elements, useful when warning the user of empty fields. */
+li:empty {
+  background-color: tomato;
+}
