@@ -62,5 +62,25 @@ a[target="_blank"] {
     width: auto;
     display: inline-block;
   }
+  /* (Adjacent Sibling Selectors) */
+  /* The + combinator targets an element's immediate sibling */
+  .btn + .btn {
+    margin-left: 20px;
+  }
 }
 
+/* Combinators ------------- */
+
+/* Child Selectors */
+/* The > combinator targets a direct child of an element */
+form > a {
+  font-size: .7em;
+}
+
+/* General Sibling Combinator */
+/* The ~ combinator targets all the specified siblings that follow an element */
+h1 ~ label {
+  background: tomato;
+  color: white;
+  padding: 5px;
+}
