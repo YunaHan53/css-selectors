@@ -1,6 +1,12 @@
 /* Structural Pseudo-classes------------------ */
 
-div:nth-child(4) {
+div:nth-of-type(4) {
+  background: #52bab3;
+  color: white;
+}
+
+/* 'nth-last-of-type' starts from the last element towards the top. */
+div:nth-last-of-type(1) {
   background: #52bab3;
   color: white;
 }
