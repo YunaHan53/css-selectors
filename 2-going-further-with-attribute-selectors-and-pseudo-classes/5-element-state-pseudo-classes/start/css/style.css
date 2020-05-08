@@ -1,1 +1,18 @@
 /* UI element states pseudo-classes ------------ */
+
+/* User-Action pseudo-classes selector */
+input:focus,
+textarea:focus {
+  border-color: #52bab3;
+}
+
+/* The "disabled" selector */
+input:disabled {
+  background: #ddd;
+}
+
+/* "Checkbox" selector */
+/* When user checks the "checkbox", the sibling element label will be styled. */
+input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
