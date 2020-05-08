@@ -15,3 +15,42 @@
   border-radius: 5px;
   line-height: 1;
 }
+
+/* `:before` pseudo elements */
+.jpg::before {
+  content: "JPG - ";
+  font-size: .75em;
+}
+
+/* Inserting images in the content before the selected element */
+.jpg::before {
+  content: url(../img/icn-picture.svg);
+  margin-right: 8px;
+}
+
+.zip::before {
+  content: url(../img/icn-zip.svg);
+  margin-right: 8px;
+}
+
+h1::before,
+h2::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: coral;
+  margin: 0 10px;
+}
+
+/* `:after` pseudo elements */
+.jpg::after {
+  content: url(../img/icn-picture.svg);
+  margin-right: 8px;
+}
+
+.zip::after {
+  content: url(../img/icn-zip.svg);
+  margin-right: 8px;
+}
