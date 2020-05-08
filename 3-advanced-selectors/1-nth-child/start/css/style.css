@@ -1,2 +1,19 @@
 /* :nth-child Pseudo-classes------------------ */
 
+li:nth-child(even) {
+  background: #52bab3;
+  color: white;
+}
+
+/* The index numbering starts at 1 in the CSS argument */
+li:nth-child(3) {
+  background: #52bab3;
+  color: white;
+}
+
+/* Expression syntax */
+/* `2n+3` means - the 3rd element is selected first, and then every 2nd element after that. */
+li:nth-child(2n+3) {
+  background: #52bab3;
+  color: white;
+}
